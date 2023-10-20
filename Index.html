@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mexant Demo</title>
+
+  <!-- Link external CSS to HTML-->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Adding bootstrap link for CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <!-- Poopins font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <!-- Adding bootstrap link for JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+  <!-- Adding Fontawesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- Nav bar web site  -->
+  <header class="header fixed-top">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container nav-container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./images/logo.png" alt="company-logo" id="logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testinomials</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Pages
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item cs-link">
+              <a class="btn nav-btn" href="#">Contact Support</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Section-1 Slider -->
+  <!-- First Slider -->
+  <div id="carouselExample" class="carousel slide ">
+    <div class="carousel-inner inner-slider">
+      <div class="carousel-item active">
+        <img class="img-fluid d-block w-100" src="./images/slide-01.jpg"  alt="..." />
+        <div class="carousel-caption d-md-block " >
+          <h2 class="slide-heading ">
+            <span class="span">Digital</span> Currency for you &amp;
+            Best <span class="span">Crypto</span> Tips
+          </h2>
+
+          <div class="div-dec"></div>
+
+          <p class="slide-paragreaph">
+            You will see a bunch of free CSS templates when you search on
+            Google. TemplateMo website is probably the best one because it is
+            100% free. It does not ask you anything in return. You have a
+            total freedom to use any template for any purpose.
+          </p>
+          <div class="buttons slider-btn">
+            <div class="green-button me-3">
+              <a class="btn slider-btn" href="#">Discover More</a>
+            </div>
+            <div class="orange-button">
+              <a class="btn slider-btn" href="#">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Slider  -->
+      <div class="carousel-item">
+        <img class="img-fluid d-block w-100" src="./images/slide-02.jpg"  alt="..." />
+        <div class="carousel-caption d-md-block">
+          <h2 class="slide-heading">
+            Best One in Town &amp; Crypto
+            <span class="span">Services</span>
+          </h2>
+          <div class="div-dec"></div>
+          <p class="slide-paragreaph">
+            When you browse through different tags on TemplateMo website, you
+            can see a variety of CSS templates which are responsive website
+            designs for different individual needs. Please tell your friends
+            about our website. Thank you.
+          </p>
+          <div class="buttons slider-buttons me-3">
+            <div class="green-button me-3">
+              <a class="btn" href="#">Discover More</a>
+            </div>
+            <div class="orange-button">
+              <a class="btn" href="#">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Slider -->
+      <div class="carousel-item">
+        <img class="img-fluid d-block w-100" src="./images/slide-03.jpg" alt="..." />
+        <div class="carousel-caption d-md-block">
+          <h2 class="slide-heading">
+            Get <span class="span">ready</span> for your business &amp;
+            upgrade
+            <span class="span">all aspects</span>
+          </h2>
+          <div class="div-dec"></div>
+          <p class="slide-paragreaph">
+            Mexant HTML5 Template is provided for free of charge. This layout
+            is based on Boostrap 5 CSS framework. Anyone can download and edit
+            for any professional website. Thank you for visiting TemplateMo
+            website.
+          </p>
+          <div class="buttons">
+            <div class="green-button me-3">
+              <a class="btn" href="#">Discover More</a>
+            </div>
+            <div class="orange-button">
+              <a class="btn" href="#">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Second-2 Services  -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="row d-flex justify-content-center mt-5">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col">
+          <div class="service-item">
+            <i class="fas fa-3x fa-archive awesome"></i>
+            <div class="service-content">
+              <h4>CSS Templates</h4>
+              <p>
+                TemplateMo website is the best for you to explore and download
+                free website templates.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col">
+          <div class="service-item">
+            <i class="fa-solid fa-3x fa-cloud awesome"></i>
+            <div class="service-content">
+              <h4>HTML5 Web Pages</h4>
+              <p>
+                Templates are based on Bootstrap 5 CSS framework. You can easily
+                adapt or modify based on your needs.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col">
+          <div class="service-item">
+            <i class="fas fa-3x fa-charging-station awesome"></i>
+            <div class="service-content">
+              <h4>Responsive Designs</h4>
+              <p>
+                All of our CSS templates are 100% free to use for commercial or
+                business websites.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col">
+          <div class="service-item">
+            <i class="fa-solid fa-3x fa-suitcase awesome"></i>
+            <div class="service-content">
+              <h4>Mobile and Tablet ready!</h4>
+              <p>
+                Our HTML CSS templates are well-tested on mobile, tablet, and
+                desktop compatibility.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col">
+          <div class="service-item">
+            <i class="fa-solid fa-3x fa-archway awesome"></i>
+            <div class="service-content">
+              <h4>Fast Customer Support</h4>
+              <p>
+                Do not be hesitated to contact us if you have any question or
+                concern about our templates.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col">
+          <div class="service-item">
+            <i class="fa-solid fa-4x fa-puzzle-piece awesome" ></i>
+            <div class="service-content">
+              <h4>Fully Customizable</h4>
+              <p>
+                If you have any idea or suggestion about new templates, feel
+                free to let us know.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section-3   -->
+  <section class="cta">
+    <div class="container-fluid container-section-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 section-3-heading">
+            <h4 class="heading slide-heading">
+              Business
+              <span class="span-solution">Solutions</span> and
+              <strong class="span">Crypto</strong> Investments
+            </h4>
+          </div>
+          <div class="col-lg-5 btn-div">
+            <div class="buttons cta-btn">
+              <div class="green-button ">
+                <a class="btn" href="#">Discover More</a>
+              </div>
+              <div class="orange-button ">
+                <a class="btn" href="#">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section-4 About US-->
+  <section id="about-us" class="about-us">
+    <div class="container">
+      <div class="row">
+        <div class="offset-4 col-5 section-4-heading">
+          <h5>ABOUT US</h5>
+          <h1>Know Us Better</h1>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-8 col-12 col-xl-8">
+          <div class="">
+            <h3 class="section-4-orange-text section-4-flex d-inline-flex p-2 justify-content-center">
+              Web Design
+            </h3>
+            <h3 class="section-4-text-color section-4-flex d-inline-flex p-2 justify-content-center">
+              Graphics
+            </h3>
+            <h3 class="section-4-text-color section-4-flex d-inline-flex p-2 justify-content-center">
+              Web Coding
+            </h3>
+          </div>
+          <table class="table mt-5">
+            <thead class="mb-5">
+              <tr class="table-row">
+                <th scope="col">Project Title</th>
+                <th scope="col">Budget</th>
+                <th scope="col">Deadline</th>
+                <th scope="col">Client</th>
+              </tr>
+            </thead>
+            <tbody class="table-body">
+              <tr class="table-row">
+                <th class="table-header" >Website Redesign</th>
+                <td>$1,500 to $2,200</td>
+                <td>2022 Dec 12</td>
+                <td>Web Biz</td>
+              </tr>
+              <tr class="table-row">
+                <th class="table-header">Website Renovation</th>
+                <td>$2,500 to $3,600</td>
+                <td>2022 Dec 10</td>
+                <td>Online Ads</td>
+              </tr>
+              <tr class="table-row">
+                <th class="table-header" >Marketing Plan</th>
+                <td>$2,500 to $4,200</td>
+                <td>2022 Dec 8</td>
+                <td>Web Biz</td>
+              </tr>
+              <tr class="table-row">
+                <th class="table-header" >All-new Website</th>
+                <td>$3,000 to $6,600</td>
+                <td>2022 Dec 2</td>
+                <td>Web Presence</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-12 mt-5">
+          <h4 id="About-heading">Please tell us about your idea and how you want it to be</h4>
+          <p>
+            You are allowed to use this template for your websites. You are NOT
+            allowed to redistribute the template ZIP file on any other template
+            websites. 
+          </p>
+          <p>
+
+            Thank you for downloading and using our templates. Please tell your
+            friends about our website.
+          </p>
+          <div class="btn btn-success discover-button">
+            Discover More
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5  Calculator -->
+  <section class="calculator">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 image-col">
+          <img id="cal-img" src="./images/calculator-image.png" alt="calculator-image" class="calculator-image" />
+        </div>
+        <div class="col-sm-12 col-lg-5 mt-5">
+          <div>
+            <h6>YOUR FREEDOM</h6>
+            <h4>Get A Financial Plan</h4>
+          </div>
+          <form class="row g-3 mb-4  mt-4">
+            <div class="col-md-12 col-sm-12 col-lg-6 col-xl-6">
+              <label for="inputAddress" class="form-label">Your name</label>
+              <input type="text" class="form-control" id="inputAddress" />
+            </div>
+
+            <div class="col-md-12 form-field col-sm-12 col-lg-6 col-xl-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" />
+            </div>
+
+            <div class="col-12 form-field">
+              <label for="inputAddress2" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="inputAddress2" />
+            </div>
+
+            <div class="col-md-12 form-field">
+              <label for="inputState" class="form-label">Your Reason</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose an Option</option>
+                <option>Financial Control</option>
+                <option>Yearly Profit</option>
+                <option>Crypto Investment</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+              <a class="btn section-5-button" href="#">submit Now</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6 Testimonial   -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <div class="row" >
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h5>Testimonials</h5>
+            <h4>What They Say</h4>
+          </div>
+        </div>
+      </div>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators test-btn">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+            class="active testimonials-btn" aria-current="true" aria-label="Slide 1"
+            ></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            class="testimonials-btn" aria-label="Slide 2"
+            ></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            class="testimonials-btn" aria-label="Slide 3"
+            ></button>
+        </div>
+        <div class="carousel-inner ">
+          <div class="carousel-item active">
+            <div class="container testimonials-container">
+              <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                  <div  class="owl-carousel owl-theme d-flex">
+                    <div class="item ">
+                      <i class="fa fa-quote-left"></i>
+                      <p>“Etiam id ligula risus. Fusce fringilla nisl nunc, nec rutrum lectus cursus nec. In blandit
+                        nibh dolor, at rutrum leo accumsan porta. ”</p>
+                      <h4>Andrew Garfield</h4>
+                      <span>CTO of Mexant</span>
+
+                      <div class="right-image">
+                        <img class="img" src="./images/testimonials-01.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container testimonials-container">
+
+              <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                  <div class="owl-carousel owl-theme d-flex">
+                    <div class="item ">
+                      <i class="fa fa-quote-left"></i>
+                      <p>"Donec et nunc massa.Nullam non felis diginissim,dapibus turpis semper,vulputate lorem.Nam
+                        volutpat posuere tellus."</p>
+                      <h4>Andrew Garfield</h4>
+                      <span>CTO of Mexant</span>
+                      <div class="right-image">
+                        
+                        <img class="img" src="./images/testimonials-01.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container testimonials-container">
+              <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                  <div class="owl-carousel owl-theme d-flex">
+                    <div class="item ">
+                      <i class="fa fa-quote-left"></i>
+                      <p>"Donec et nunc massa.Nullam non felis diginissim,dapibus turpis semper,vulputate lorem.Nam
+                        volutpat posuere tellus."</p>
+                      <h4>George Lopez</h4>
+                      <span>Crypto Manager</span>
+                      <div class="right-image">
+                        <img class="img" src="./images/testimonials-01.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section-6  client  -->
+  <section class="partners">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="./images/client-01.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="./images/client-01.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="./images/client-01.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="./images/client-01.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="./images/client-01.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="./images/client-01.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container" >
+      <div class="row">
+        <div class="col-lg-12 p-4">
+          <p >Copyright © 2022 Mexant Co., Ltd. All Rights Reserved.</p>
+           <p> Designed by <a class="footer-link" title="CSS Templates" rel="sponsored" href="#"
+              target="_blank">TemplateMo</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const headerE1 = document.querySelector('header');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 5) {
+        headerE1.classList.add('header-scrolled');
+      } else if (window.scrollY <= 4) {
+        headerE1.classList.remove('header-scrolled');
+      }
+    });
+  </script>
+</body>
+
+</html>

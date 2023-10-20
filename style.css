@@ -1,0 +1,596 @@
+/* Variable for main color */
+:root {
+  --orange: #ff511a ;
+  --green: #43ba7f;
+  --white: white;
+}
+
+/* First section */
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar CSS  */
+.nav-item {
+  margin-right: 30px;
+}
+
+.navbar-toggler {
+  margin-right: 10px;
+  border: 2px solid white;
+}
+
+
+.header-scrolled {
+  background-color: #212741;
+  opacity: 1;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.20);
+}
+
+
+.navbar .navbar-nav .nav-item a {
+  color: var(--white);
+}
+.collapse {
+  text-align: center;
+}
+.cs-link{
+  margin-top: 5px;
+}
+.nav-link {
+  position: relative;
+}
+.btn {
+  background-color: var(--green);
+}
+.span {
+  color: var(--orange) !important;
+}
+.nav-btn {
+  background-color: var(--green) !important;
+  font-size: 12px !important;
+}
+.dropdown-menu {
+  background-color: transparent !important;
+}
+.dropdown-item:hover {
+  background-color: var(--orange);
+}
+.navbar {
+  background-color: transparent;
+}
+.nav-container {
+  margin-top: 0 !important;
+}
+.navbar-collapse li a:hover {
+  color: var(--orange) !important;
+}
+.navbar-toggler-icon {
+  color: var(--white);
+}
+.navbar-toggler {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: var(--white) !important;
+  border-radius: 5px;
+}
+
+/* Section-1 */
+.slide-paragreaph {
+  text-align: left;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: left;
+  margin-top: 70px;
+  margin-right: 70px;
+}
+.green-button {
+  background-color: var(--green);
+  border-radius: 3px;
+}
+.contact-btn {
+  display: inline;
+}
+.orange-button {
+  background-color: var(--orange);
+  border-radius: 4px;
+}
+.btn {
+  color: var(--white) !important;
+}
+.img-fluid {
+  width: 100% !important;
+  height: 100vh !important;
+  
+}
+#carouselExample {
+  height: 100vh !important;
+  padding: 0;
+  margin: 0;
+}
+.carousel-caption {
+
+  top: 40px;
+  left: 150px;
+  right: 150px;
+  
+  /* margin-right: 270px; */
+}
+.slide-heading {
+  position: relative;
+  justify-content: left;
+  text-align: start;
+  z-index: 2;
+  font-size: 3rem;
+  color: var(--white);
+  font-weight: 650;
+  opacity: 1;
+  visibility: visible;
+  line-height: 60px;
+  margin-bottom: 30px;
+  margin-right: 50px;
+  animation: fadeInLeft .8s ;
+  animation-delay: .3s;
+}
+/* Trassition fadeInLeft */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* Horizontal line  */
+.div-dec {
+  width: 80px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: var(--white);
+  margin-bottom: 40px;
+  opacity: 1;
+  visibility: visible;
+}
+.div-dec {
+  animation: fadeIn .8s;
+  animation-delay: .3s;
+}
+.slide-paragreaph {
+  color: var(--white);
+  margin-right: 60px;
+  margin-bottom: 50px;
+  opacity: 1;
+  visibility: visible;
+  animation: fadeInRight 0.8s ;
+  animation-delay: .3s;
+} 
+/* Trassition fadeInRight */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(400px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-caption {
+    width: 60%!important;
+    top: 120px;
+    left: 94px !important;
+  }
+  .carousel-control-prev-icon{
+    margin-left: -120px;
+  }
+  .carousel-control-next-icon{
+    margin-right: -110px;
+  }
+  
+}
+@media (min-width:768px) and (max-width:991px){
+  .carousel-caption {
+    width: 80% !important;
+    top: 120px;
+    left: 10% !important;
+  }
+  .carousel-control-prev-icon{
+    margin-left: -80px;
+  }
+  .carousel-control-next-icon{
+    margin-right: -80px;
+  }
+  .img-fluid {
+    width: 100%;
+    height: 80vh !important;
+  }
+  #carouselExample{
+    height: 80vh !important;
+  }
+}
+@media (min-width:530px) and (max-width:767px){
+  .carousel-caption {
+    width: auto !important;
+    top: 130px !important ;
+    padding-top: 6.25rem !important;
+  }
+}
+@media (min-width: 100px) and (max-width:767px) {
+  .carousel-caption {
+    text-align: center;
+    width: auto;
+    top: 120px !important;
+  }
+  .slide-heading{
+    text-align: center;
+    font-size: 3rem;
+    line-height: 60px;
+    margin-right: 0px;
+  }
+  .div-dec{
+    display: none;
+  }
+  .buttons {
+    margin-inline: auto;
+    justify-content: center;
+
+  }
+  .img-fluid {
+    width: auto;
+    height: 100vh !important;
+  }
+  #carouselExample{
+    height: 100vh !important;
+  }
+  .slide-paragreaph {
+    display: none;
+  }
+}
+
+
+/* CSS for second section Services  */
+.container {
+  margin-top: 100px;
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+.service-item {
+  border-radius: 5px;
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+.service-item i {
+  display: inline;
+}
+.service-item h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+.awesome{
+  color: var(--green);
+}
+
+.fa-cloud::before {
+  content: "\f0c2";
+}
+.service-item p {
+  font-size: 15px;
+  line-height: 26px;
+  color: #212741;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* CSS for section 3  */
+.section-3-heading {
+  text-align: center;
+  font-size: 50px !important;
+  font-weight: 700;
+  color: var(--white) !important;
+  line-height: 50px;
+}
+.container-section-3 {
+  margin-top: 100px;
+  background-image: url(./images/cta-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 50px 0px !important; 
+}
+.heading {
+  font-size: 45px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 50px;
+  margin-bottom: 0px;
+}
+.cta-btn{
+  margin-top: 40px !important;
+  justify-content: end !important;
+}
+.span-solution{
+  color: var(--green);
+}
+.buttons{
+  
+  margin-right: 0px;
+}
+.cta .container{
+  padding: 40px 10px;
+  margin-top: 0px;
+}
+@media (max-width: 992px) {
+  .container-section-3 .buttons {
+    justify-content: center !important;
+    margin-top: 30px;
+    margin-right: 0px;
+  }
+  .container-section-3 .section-3-heading {
+    text-align: center;
+  }
+}
+
+/* CSS for  About us section-4 */
+.section-4-heading {
+  text-align: center;
+}
+.section-4-heading h5 {
+  color: var(--orange);
+  font-weight: bold;
+}
+.section-4-heading h1 {
+  color: #212741;
+  font-weight: bold;
+}
+.section-4-flex {
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  margin-right: 15px;
+  font-size: 20px;
+  padding: 15px 20px;
+}
+.section-4-orange-text {
+  color: var(--orange);
+}
+.section-4-text-color {
+  color: #212741;
+}
+.table-row .table-header  td{
+  padding: 20px 0px !important;
+}
+.table .table-header {
+  color: var(--green);
+}
+.table-body {
+  font-size: 15px;
+}
+#About-heading {
+  color: #212741;
+}
+.discover-button{
+  background-color: var(--green);
+}
+
+/* CSS for sction 5 */
+.calculator {
+  margin-top: 150px;
+  background-image: url(../images/calculator-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+.calculator-image {
+  width: 470px;
+  position: absolute;
+  top: -40px;
+}
+#cal-img {
+  width: 500px;
+  height: 510px;
+}
+.calculator h6 {
+  color: var(--orange);
+  font-weight: bold;
+}
+.calculator h4 {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 30px;
+}
+.form-control,
+.form-select {
+  opacity: 0.4;
+}
+.form-label {
+  color: var(--white) !important;
+}
+.calculator .section-5-button {
+  background-color: var(--orange);
+  pointer-events: none;
+}
+
+@media (max-width: 992px) {
+  .calculator-image {
+    display: none;
+  }
+}
+
+/* CSS for testimonial */
+.testimonials .section-heading{
+  text-align: center
+}
+.testimonials h5 {
+  color: var(--orange);
+  font-weight: bold;
+  justify-content: center;
+ 
+}
+.testimonials .carousel-inner {
+  height: 60% !important;
+}
+.testimonials h4 {
+  color: #212741;
+  font-weight: bolder;
+}
+.fa-quote-left {
+  color: var(--white);
+  background-color: var(--green);
+  border-radius: 5px;
+  width: 49px;
+  height: 43px;
+  text-align: center;
+}
+.testimonials .item {
+  border-radius: 15px;
+  padding: 50px 320px 50px 50px;
+  padding-top: 50px;
+  background-color: var(--white);
+  position: relative;
+  overflow: hidden;
+  margin: 15px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  padding-top: 35px;
+}
+.testimonials-container {
+  margin-top: 0px;
+}
+.testimonials .item i {
+  width: 70px;
+  height: 70px;
+  background-color: var(--green);
+  display: inline-block;
+  text-align: center;
+  line-height: 70px;
+  color: var(--white);
+  font-size: 44px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.testimonials .item p {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 26px;
+  color: #212741;
+}
+.testimonials .item h4 {
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 0px;
+  color: #212741;
+}
+.testimonials .item span {
+  margin-top: 5px;
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--green);
+}
+.img {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.testimonials .item img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 300px;
+  border-radius: 5px;
+}
+.carousel-indicators {
+  bottom: -35px !important;
+}
+.testimonials-btn{
+  background-color: var(--orange) !important;
+  width: 10px !important; 
+  height: 10px !important;
+}
+@media (max-width: 992px) {
+  .testimonials .item img {
+    max-width: 200px;
+    right: 50px !important;
+  }
+}
+@media (max-width: 767px) {
+  .testimonials .item {
+    padding: 50px;
+  }
+  .testimonials .item i {
+    margin-bottom: 60px;
+  }
+  .testimonials .item img {
+    max-width: 100px;
+    right: 50px;
+    top: 100px;
+  }
+  
+}
+
+.testimonials-btn {
+  background-color: var(--orange);
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+/* Client Section -6 */
+.partners  .container{
+  margin-top: 0px;
+  padding: 50px 0px;
+}
+.partners {
+  background-color: #212741;
+  padding: 1px 0px;
+  margin-top: 120px;
+}
+section.partners .item {
+  margin: 15px;
+}
+
+.partners img {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* CSS for footer */
+
+.footer-container{
+  margin-top: 0px;
+}
+
+footer {
+  background-color: #181d30;
+  text-align: center;
+  margin-top: 0;
+}
+footer p  {
+  color: var(--white);
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+}
+.footer-link {
+  color: var(--orange);
+  text-decoration: none;
+}
